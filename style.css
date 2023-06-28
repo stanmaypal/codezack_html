@@ -1,0 +1,101 @@
+#mnav
+{
+background-color: lightgreen;	
+}
+#nav 
+{
+	list-style: none;
+	
+}
+#nav .nav-list
+{
+	display: inline;
+}
+.alink
+{
+	text-decoration: none;
+	font-size: 30px;
+	margin-left: 10px;
+	color: Tomato;
+}
+.alink:hover
+{
+	background-color: yellow;
+	color: purple;
+}
+#logBox
+{
+	margin-top: 200px;
+	width: 350px;
+background-color: lightblue;
+	box-shadow: 2px 3px 3px 2px;
+}
+.lbl
+{
+	color: tomato;
+	font-size: 25px;
+}
+.inBox
+{
+	font-size: 25px;
+	border-color: red;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+#btn
+{
+	border-color: red;
+	background-color: white;
+	color:red;
+	font-size: 30px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+#he1
+{
+	color: tomato;
+	font-size: 35px;
+
+}
+#cnl
+{
+	float: right;
+	margin-right: 20px;
+	margin-top:20px;
+	
+}
+#cnl1
+{
+font-size: 20px;
+	color:red;
+	text-decoration: none;	
+}
+#news
+{
+	background-color: yellow;
+}
+#data1
+{
+	background-color: lightblue;
+}
+#img1
+{
+	height: 300px;
+	width: 800px;
+}
+#ntc
+{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+#abs
+{
+	text-align: center;
+color: tomato;
+font-size: 50px
+}
+#abs-info
+{
+	width: 800px;
+}
