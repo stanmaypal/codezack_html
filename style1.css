@@ -92,3 +92,61 @@ background-color:yellow;
  	padding-bottom: 20px;
  	padding-top: 10px;
  }
+/* 01/07/2023 */
+.pro1
+ {
+ 	height: 250px;
+ 	width: 200px;
+ }
+ .pro1:hover
+ {
+ 	
+ 	width: 220px;
+ }
+ .card
+ {
+ 	box-shadow: 2px 3px 3px 1px gray;
+ 	margin-bottom: 100px;
+ 	width: 280px;
+
+ }
+ .pr1
+ {
+ 	float: right;
+ 	padding-right: 10px;
+ }
+ .pr
+ {
+ 	float: left;
+ }
+ .btn-b
+ {
+ 	background-color: lightgreen;
+ 	font-size: 12px;
+ 	border-radius: 5px;
+ }
+ .btn-c
+ {
+ 	background-color: pink;
+ 	font-size: 12px;
+ 	border-radius: 5px;
+ }
+ .pro-dtl{
+ 
+ 	padding-bottom: 20px;
+ }
+ .fev
+ {
+ 	font-size: 25px;
+ color: gray;
+ float: right;
+ padding-right: 10px;
+ padding-top :10px;
+ }
+ .fev:hover{
+ 	font-size: 25px;
+ 	 color: red;
+ float: right;
+ padding-right: 10px;
+ padding-top :10px;
+ }
