@@ -9,15 +9,48 @@
 	<div id="logBox">
 		<span id="cnl"><a id="cnl1" href="index.html">X</a></span>
 		<h2 id="he1">LogIn</h2>
-		<form>
+		<form action="#" method="post">
 			<label class="lbl">userId</label>
-			<input type="text" class="inBox" name="">
+			<input type="text" class="inBox" name="" id="user">
 			<label class="lbl">Password</label>
-			<input type="password" class="inBox" name="">
-			<button id="btn">Submit</button>
+			
+			<input type="password" class="inBox" name="" id="pass">
+			<span id="err"></span>
+
+			<button id="btn" onclick="fun()">Submit</button>
+			<button id="btn" onclick="window.print()">Print</button>
+
+			
 		</form>
 		
 	</div>
 </center>
+<script>
+	function fun()
+	{
+		let u1=document.getElementById('user').value;
+		let p1=document.getElementById('pass').value;
+	//	document.write(u1+" "+p1);
+		if(u1==''&& p1=='')
+		{
+			document.write('<h1>!! Error Please enter the id and password</h1>');
+			//document.getElementById('err').innerHTML='!! Error Please enter the id and password';
+		}
+		else{
+			if(u1=='niit@gmail.com' && p1=='niit@123')
+			{
+				document.write("<h1>log in successfullllly</h1>");
+				window.open('product.html');
+			}
+			else{
+				document.write("<h1>invalid id and password</h1>");
+
+			}
+
+
+		}
+
+	}
+</script>
 </body>
 </html>
