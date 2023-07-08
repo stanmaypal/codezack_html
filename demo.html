@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <input type="text" placeholder="enter the no1." id="n1">
+        <input type="text" placeholder="enter the no2."id="n2">
+        <input type="text" placeholder="enter the Optrator."id="opt">
+
+<button onclick="niit()">Click</button>
+    </form>
+
+    <script>
+function niit()
+{
+    let num1=parseInt(document.getElementById('n1').value);
+    let num2=parseInt(document.getElementById('n2').value);
+let ss=document.getElementById('opt').value;
+//document.write(num1 +" "+ num2+" "+ss);
+
+    switch(ss)
+        {
+            case '+':
+                document.write(num1+num2);
+                break;
+            case '-':
+            document.write(num1-num2);
+            break;
+            case '*':
+                document.write(num1*num2);
+                break;
+             case '/':
+                document.write(num1/num2);    
+                break;
+                default:
+                    document.write("data not found !!!")
+        }
+
+}
+
+        
+    </script>
+    
+</body>
+</html>
