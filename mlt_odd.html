@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i=1;
+        let st=parseInt(prompt("Enter the Stat_Point."))
+        let sp=parseInt(prompt("Enter the Stop_POint."))
+        let opt=parseInt(prompt("Enter Odd or Even 1/0."))
+
+
+        switch(opt)
+        {
+            case 1:
+                for(i=st;i<=sp;i++)
+                {
+                   if(i%2==0)
+                   {
+                    document.write(i+" is a even no<br>");
+                   } 
+                }
+                break;
+               case 0:
+               for(i=st;i<=sp;i++)
+                {
+                   if(i%2==1)
+                   {
+                    document.write(i+" is a odd no<br>");
+                   } 
+                }
+                break; 
+        }
+        // for(i=st;i<=sp;i++)
+        // {
+        //    // document.write(i +"<br>");
+        //    if(i%2==0)
+        //    {
+        //    // document.write(i+" is a even no<br>");
+
+        //    }
+        //    else{
+        //     document.write(i+" is a odd no<br>");
+
+        //    }
+    
+        
+    </script>
+</body>
+</html>
