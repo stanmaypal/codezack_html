@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ticket</title>
+	<link rel="icon" type="image/x-icon" href="bus.png">
+	<style type="text/css">
+		
+		.head1 {
+			width: 300px;
+			border: 5px double red;
+		}
+
+		.tic {
+			width: 300px;
+			border: 5px double red;
+			margin-top: 20px;
+		}
+
+		#hi {
+			color: red;
+			font-family: arialblack;
+		}
+
+		.inBox {
+			font-size: 25px;
+			border-radius: 10px;
+			border-color: tomato;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		#btn {
+			background-color: lightgreen;
+			font-size: 25px;
+			margin-bottom: 10px;
+			margin-top: 5px;
+			width: 120px;
+			border-radius: 20px;
+			color: red;
+		}
+
+		.lb {
+			color: red;
+			font-size: 22px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<div class="head1">
+		<h1 id="hi">National Bus Service</h1>
+		<div>
+			<form action="#" method="post">
+				<label class="lb">Start Point</label>
+				<select id="sp" class="inBox">
+					<option>----Select Start Point----</option>
+					<option value="1">GKP</option>
+					<option value="2">MRJ</option>
+				</select>
+				<label class="lb">Stop Point</label>
+				<select id="ep" class="inBox">
+					<option>----Select Stop Point----</option>
+					<option value="1">GKP</option>
+					<option value="2">MRJ</option>
+				</select>
+				<label class="lb">Date</label>
+				<input type="datetime-local" id="dt" class="inBox">
+				<button id="btn" onclick="ticket()">Click</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="tic">
+		<h1>Your Ticket</h1>
+		<p><strong>Start:</strong><span id="tst"></span></p>
+		<p><strong>Stop:</strong><span id="tep"></span></p>
+		<p><strong>Date:</strong><span id="tdt"></span></p>
+		<p><strong>Distance:</strong><span id="tdis"></span></p>
+		<p><strong>Rate:</strong><span id="trt"></span></p>
+	</div>
+
+	<script type="text/javascript">
+		function ticket() {
+			event.preventDefault();
+			let start = parseInt(document.getElementById('sp').value);
+			let stop = parseInt(document.getElementById('ep').value);
+			let date = document.getElementById('dt').value;
+
+			if (start == 1 && stop == 2) {
+				document.getElementById('tst').innerHTML = 'Gorakhpur';
+				document.getElementById('tep').innerHTML = 'Maharajganj';
+				document.getElementById('tdis').innerHTML = '70 KM';
+				document.getElementById('tdt').innerHTML = date;
+				document.getElementById('trt').innerHTML = '105';
+			}
+			else if (start == 2 && stop == 1) {
+				document.getElementById('tst').innerHTML = 'Maharajganj';
+				document.getElementById('tep').innerHTML = 'Gorakhpur';
+				document.getElementById('tdis').innerHTML = '70 KM';
+				document.getElementById('tdt').innerHTML = date;
+				document.getElementById('trt').innerHTML = '105';
+			}
+			//window.print();
+		}
+	</script>
+	<button onclick="ticket()">Print</button>
+</center>
+</body>
+</html>
