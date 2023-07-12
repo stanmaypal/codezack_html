@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reverse</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="no" placeholder="Enter the no.:" name="">
+		<button onclick="reverse()">Click</button>
+	</form>
+
+	<script type="text/javascript">
+		function reverse()
+		{
+			let num=parseInt(document.getElementById('no').value);
+			let res=0;
+			let temp;
+			//let abc=num;
+			while(num>0)
+			{
+				temp=num%10;
+				res=res*10+temp;
+				num=parseInt(num/10);
+			}
+			document.write(res);
+		}
+	</script>
+
+</body>
+</html>
